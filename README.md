@@ -5,8 +5,8 @@ You need to create some **a DATABASE called Abacus Project** to make this projec
 
 |**Nome Tabella**|**Dati**|**Primary Key**|
 | --- | --- | --- |
-| PuntoRilevamentto | LOCALITA | prID -> PK |
-| Centralina | DESCRIZIONE, LOCALITA | cID -> PK |
-| Rilevazione | RICHTER, DATETIME | rID -> PK |
+| PuntoRilevamentto | LOCALITA | prID |
+| Centralina | DESCRIZIONE, LOCALITA | cID |
+| Rilevazione | RICHTER, DATETIME | rID |
 | Sismografo | INFO | sID -> PK |
-| Utente | PASSWORD(hashing), SALT, IMG, DESCRIZIONE | NOME -> PK |
+| Utente | PASSWORD(hashing), SALT, IMG, DESCRIZIONE, SESSO, DATADINASCITA | NOME |
