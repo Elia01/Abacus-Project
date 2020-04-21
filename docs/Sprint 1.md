@@ -6,7 +6,6 @@
 
 # **Informatica Sprint 2**
 
-![](RackMultipart20200421-4-y8fmah_html_79245ea09a1623b3.png)
 
 **SCHEMA CONCETTUALE**
 
@@ -31,7 +30,7 @@ Per questo motivo introduciamo l&#39;entità utenti in cui memorizzare username 
 
 ![](RackMultipart20200421-4-y8fmah_html_1f9691ed9b359585.gif)
 
-**ENTIT**** À**
+**ENTITÀ**
 
 - Punto di rilevamento con due attributi:
   - ID chiave primaria
@@ -74,5 +73,3 @@ L&#39;entità Utente serve per registrare gli utenti che possono avere l&#39;acc
 **TRADUZIONE DIAGRAMMA ER IN ORM**
 
 Qui di seguito lo schema precedentemente visto tradotto in ORM, per approfondirlo al meglio.
-
-![](RackMultipart20200421-4-y8fmah_html_c085d3fb4db5a656.gif)
