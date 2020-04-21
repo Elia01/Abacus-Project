@@ -9,4 +9,4 @@ You need to create some **a DATABASE called Abacus Project** to make this projec
 | Centralina | DESCRIZIONE, LOCALITA | cID -> PK |
 | Rilevazione | RICHTER, DATETIME | rID -> PK |
 | Sismografo | INFO | sID -> PK |
-| Utente | PASSWORD(hashing), SALT, IMG | NOME -> PK |
+| Utente | PASSWORD(hashing), SALT, IMG, DESCRIZIONE | NOME -> PK |
