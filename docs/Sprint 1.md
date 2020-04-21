@@ -4,72 +4,70 @@
 - **Brazzarola David**
 - **Jennifer Emiliani**
 
-# **Informatica Sprint 2**
+# **Informatics sprint 2**
 
 
-**SCHEMA CONCETTUALE**
+**Conceptual scheme**
 
-Le informazioni fondamentali che devono essere memorizzate nella base di dati sono le rilevazioni (onda sismica in scala Richter) che vengono effettuate dai sismografi associati a centraline distribuite nei luoghi di rilevazione.
+The fundamental information that must be stored in the database are the surveys (Richter scale seismic wave) that are carried out by seismographs associated with the seismographs distributed in the survey locations.
 
-Dall&#39;analisi dei dati proponiamo quindi un&#39;organizzazione in 4 entità:
+From the data analysis we propose an organization into 4 entities:
 
-- Rilevazione
-- Sismografo
-- Centralina
-- Punto di rilevamento
+- Detection
+- Seismograph
+- Control unit
+- Detection point
 
-Le entità sono in relazione fra loro facendo riferimento alle seguenti ipotesi:
+Entities are related to each other under the following assumptions:
 
-- Ogni rilevazione è relativa ad un solo sismografo
-- Ogni sismografo è collegato ad una sola centralina
-- Ogni centralina è posizionata in un solo punto di rilevamento.
+- Each survey is related to only one seismograph
+- Each seismograph is connected to a single control unit.
+- Each control unit is located at a single point of detection.
 
-Oltre ai dati relativi ai rilevamenti dei sismografi nel database devono essere memorizzate anche le informazioni che permetteranno l&#39;accesso ai soli utenti autorizzati.
+In addition to the data related to the seismograph readings in the database must also be stored information that will allow access only to authorized users.
 
-Per questo motivo introduciamo l&#39;entità utenti in cui memorizzare username e password di accesso.
+For this reason we introduce l&#39;user entities in which to store username and password access.
 
-![](RackMultipart20200421-4-y8fmah_html_1f9691ed9b359585.gif)
+**ENTITY**
 
-**ENTITÀ**
+- Detection point with two attributes:
+  - Primary key ID
+  - Further information (location etc.)
 
-- Punto di rilevamento con due attributi:
-  - ID chiave primaria
-  - Ulteriori informazioni (luogo ecc.)
+- Control unit with two attributes:
+  - Control unit id as primary key
+  - its location
 
-- Centralina con due attributi:
-  - Id della centralina come chiave primaria
-  - la sua località
+- Seismograph with two attributes:
+  - Seismograph Id
+  - More information
 
-- Sismografo con due attributi:
-  - Id del sismografo
-  - Ulteriori informazioni
+- Detection with two attributes:
+  - Date and time of detection
+  - Richter scale degree of detection
 
-- Rilevazione con due attributi:
-  - Data e ora della rilevazione
-  - Grado in scala Richter del rilevamento
-
-- Utenti con due attributi
-  - Nome utente
+- Users with two attributes
+  - Username
   - Password
 
-Per semplificare la trattazione non abbiamo approfondito le &quot;ulteriori informazioni&quot; che potrebbero essere associate alle varie entità in quanto non sembrano particolarmente rilevanti per la proposta di soluzione.
+In order to simplify the discussion, we did not go into detail on the &quot; further information which could be associated with the various entities as they do not seem particularly relevant to the proposed solution.
 
-**ASSOCIAZIONI**
+**ASSOCIATIONS**
 
-Abbiamo tre associazioni fra le entità:
+We have three associations between the entities:
 
-- L&#39;associazione **1:N** tra le entità Punto di rilevamento e Centralina
-- L&#39;associazione **1:N** tra le entità Centralina e Sismografo
-- L&#39;associazione **1:N** tra le entità Sismografo e Rilevazione
+- association **1:N** between the entities Detection Point and Control Unit
+- association **1:N** between the Central Unit and Seismograph entities
+- association **1:N** between Seismograph and Detection entities
 
-L&#39;entità Utente serve per registrare gli utenti che possono avere l&#39;accesso alla pagina Web per eseguire alcune operazioni.
+User entity is used to register users who can have access to the Web page to perform some operations.
 
-**LETTURA DELLO SCHEMA**
+**READING THE SCHEMA**
 
-- Un punto di rilevamento ha collegate più centraline, mentre una centralina ha un solo punto di rilevamento
-- Una centralina è dotata di più sismografi, un sismografo invece è collegato a una sola centralina
-- Un sismografo effettua più rilevazioni, mentre una rilevazione viene effettuata da un solo sismografo
+- A detection point has several controllers connected, while a controller has only one detection point
+- One control unit is equipped with several seismographs, one seismograph is connected to a single control unit.
+- A seismograph makes several surveys, while one survey is made by a single seismograph
 
-**TRADUZIONE DIAGRAMMA ER IN ORM**
+**TRANSLATING ER IN ORM **
 
-Qui di seguito lo schema precedentemente visto tradotto in ORM, per approfondirlo al meglio.
+Below is the scheme previously seen translated into ORM, to better understand it.
