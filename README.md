@@ -68,9 +68,6 @@ CREATE TABLE PuntoRilevamento{
     
 };
 ```
-|**Table Name**|**Data**|**Primary Key**|
-| --- | --- | --- |
-| Utente | PASSWORD(hashing), SALT, IMG, DESCRIZIONE, SESSO, DATADINASCITA | NOME |
 
 ### Built With
 * [Netbeans](https://netbeans.org/)
