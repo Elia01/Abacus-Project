@@ -7,16 +7,16 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 You need to create a **DATABASE called Abacus Project** to make this project useful and in this **DB** you need to insert some different table:
 
-* **Monitoraggio**
+* **Rilevazione**
 
 ```
-CREATE TABLE Monitoraggio{
-  DataTime Varchar (15),
-  Hour Varchar (15),
-  Magnitudo Varchar (10),
+CREATE TABLE Rilevazione{
+  rID Long,
+  DataOra Timestamp,
+  Magnitudo float (15, 15),
   Localita Varchar (70),
   Profondita int,
-  PRIMARY KEY (DataTime,Hour)
+  PRIMARY KEY (DataOra)
     
 };
 ```
@@ -25,7 +25,7 @@ CREATE TABLE Monitoraggio{
 
 ```
 CREATE TABLE PuntoRilevamento{
-  prID int,
+  prID Long,
   Localita Varchar (70),
   PRIMARY KEY (prID)
     
@@ -36,22 +36,9 @@ CREATE TABLE PuntoRilevamento{
 
 ```
 CREATE TABLE Centralina{
-  cID int,
-  Descrizione Varchar (500),
+  cID Long,
   Localita Varchar (70),
   PRIMARY KEY (cID)
-    
-};
-```
-
-* **Rilevazione**
-
-```
-CREATE TABLE Rilevazione{
-  rID int,
-  RICHTER float (15, 15),
-  DateTime Varchar (20),
-  PRIMARY KEY (rID)
     
 };
 ```
@@ -60,8 +47,7 @@ CREATE TABLE Rilevazione{
 
 ```
 CREATE TABLE Sismografo{
-  sID int
-  Info Varchar (500),
+  sID Long,
   PRIMARY KEY (2ID)
     
 };
@@ -71,14 +57,15 @@ CREATE TABLE Sismografo{
 
 ```
 CREATE TABLE PuntoRilevamento{
+  uID Long,
   Nome Varchar (30),
   Password Varchar(100),
   Salt Varchar (100),
   Img Varchar (200),
   Descrizione Varchar (500),
   Sesso Varchar (10),
-  DataDiNascita Varchar (20),
-  PRIMARY KEY (Nome)
+  Eta Varchar (20),
+  PRIMARY KEY (uID)
     
 };
 ```
