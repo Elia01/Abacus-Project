@@ -5,18 +5,76 @@ Ministerial trace of the seismic events
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-You need to create some **a DATABASE called Abacus Project** to make this project useful and in this **DB** you need to insert some different table:
+You need to create a **DATABASE called Abacus Project** to make this project useful and in this **DB** you need to insert some different table:
 
+* **Punto di Rilevamento**
+
+```
+CREATE TABLE PuntoRilevamento{
+  prID int,
+  Localita Varchar (70),
+  PRIMARY KEY (prID)
+    
+};
+```
+
+* **Centralina**
+
+```
+CREATE TABLE Centralina{
+  cID int,
+  Descrizione Varchar (500),
+  Localita Varchar (70),
+  PRIMARY KEY (cID)
+    
+};
+```
+
+* **Rilevazione**
+
+```
+CREATE TABLE Rilevazione{
+  rID int,
+  RICHTER float (15, 15),
+  DateTime Varchar (20),
+  PRIMARY KEY (rID)
+    
+};
+```
+
+* **Sismografo**
+
+```
+CREATE TABLE Sismografo{
+  sID int
+  Info Varchar (500),
+  PRIMARY KEY (2ID)
+    
+};
+```
+
+* **Utente**
+
+```
+CREATE TABLE PuntoRilevamento{
+  Nome Varchar (30),
+  Password Varchar(100),
+  Salt Varchar (100),
+  Img Varchar (200),
+  Descrizione Varchar (500),
+  Sesso Varchar (10),
+  DataDiNascita Varchar (20),
+  PRIMARY KEY (Nome)
+    
+};
+```
 |**Table Name**|**Data**|**Primary Key**|
 | --- | --- | --- |
-| PuntoRilevamentto | LOCALITA | prID |
-| Centralina | DESCRIZIONE, LOCALITA | cID |
-| Rilevazione | RICHTER, DATETIME | rID |
-| Sismografo | INFO | sID |
 | Utente | PASSWORD(hashing), SALT, IMG, DESCRIZIONE, SESSO, DATADINASCITA | NOME |
 
 ### Built With
 * [Netbeans](https://netbeans.org/)
+* [Maven](https://maven.apache.org/)
 
 ### Contributing
 Please read [CONTRIBUTING.md](https://github.com/Elia01/Abacus-Project/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
