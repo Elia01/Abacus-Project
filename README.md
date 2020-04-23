@@ -1,4 +1,4 @@
-# Abacus-Project
+# Abacus-Project (earthquakes)
 Ministerial trace of the seismic events
 
 ## Getting Started
