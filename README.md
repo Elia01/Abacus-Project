@@ -7,7 +7,6 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 You need to create some **a DATABASE called Abacus Project** to make this project useful and in this **DB** you need to insert some different table:
 
-```
 |**Table Name**|**Data**|**Primary Key**|
 | --- | --- | --- |
 | PuntoRilevamentto | LOCALITA | prID |
@@ -15,7 +14,7 @@ You need to create some **a DATABASE called Abacus Project** to make this projec
 | Rilevazione | RICHTER, DATETIME | rID |
 | Sismografo | INFO | sID |
 | Utente | PASSWORD(hashing), SALT, IMG, DESCRIZIONE, SESSO, DATADINASCITA | NOME |
-```
+
 ### Built With
 * [Netbeans](https://netbeans.org/)
 
