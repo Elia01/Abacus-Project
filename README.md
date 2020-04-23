@@ -7,6 +7,20 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 You need to create a **DATABASE called Abacus Project** to make this project useful and in this **DB** you need to insert some different table:
 
+* **Monitoraggio**
+
+```
+CREATE TABLE Monitoraggio{
+  DataTime Varchar (15),
+  Hour Varchar (15),
+  Magnitudo Varchar (10),
+  Localita Varchar (70),
+  Profondita int,
+  PRIMARY KEY (DataTime,Hour)
+    
+};
+```
+
 * **Punto di Rilevamento**
 
 ```
