@@ -4,7 +4,6 @@ Ministerial trace of the seismic events
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
----
 ### Prerequisites
 You need to create a **DATABASE called Abacus Project** to make this project useful and in this **DB** you need to insert some different table:
 
@@ -101,11 +100,11 @@ Please read [CONTRIBUTING.md](https://github.com/Elia01/Abacus-Project/blob/mast
 See also the list of [contributors](https://github.com/Elia01/Abacus-Project/graphs/contributors) who participated in this project
 
 ---
-## License
+### License
 This project is unlicensed - see the [LICENSE.md](https://github.com/Elia01/Abacus-Project/blob/master/LICENSE) file for details
 
 ---
-# Acknowledgments
+### Acknowledgments
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
