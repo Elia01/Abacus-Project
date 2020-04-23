@@ -20,7 +20,7 @@ CREATE TABLE Monitoraggio{
     
 };
 ```
-
+---
 * **Punto di Rilevamento**
 
 ```
