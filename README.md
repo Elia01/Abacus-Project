@@ -83,7 +83,7 @@ Please read [CONTRIBUTING.md](https://github.com/Elia01/Abacus-Project/blob/mast
 ### Authors
 * **Elia Gaole** - *Team Manager* - [Elia01](https://github.com/Elia01)
 * **David Brazzarola** - [01brazz](https://github.com/01brazz)
-* **Jennifer Emiliani** - [jennyemi](https://github.com/jennyemi)
+* **Jennifer Emiliani** - [jennyemi](https://github.com/jennyemi)  
 See also the list of [contributors](https://github.com/Elia01/Abacus-Project/graphs/contributors) who participated in this project
 
 ---
